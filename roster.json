@@ -4,25 +4,46 @@
   "rate": 10,
   "recipients": [
    "googlevps",
+   "lane-agnes",
    "lane-asi1-airdrop",
    "lane-asi1-gig",
    "lane-chat",
    "lane-coding",
+   "lane-m3-1",
    "lane-vision",
    "laptop",
    "rci-vps"
   ],
   "rows": 8
  },
+ "lane-agnes": {
+  "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN5TLWZvZdJ7uKn4X60a/ET5vJCnMqJCXqKY+TQjqVz9 lane-agnes",
+  "rate": 30,
+  "recipients": [
+   "googlevps",
+   "lane-agnes",
+   "lane-asi1-airdrop",
+   "lane-asi1-gig",
+   "lane-chat",
+   "lane-coding",
+   "lane-m3-1",
+   "lane-vision",
+   "laptop",
+   "rci-vps"
+  ],
+  "rows": 16
+ },
  "lane-asi1-airdrop": {
   "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKZHQjx187RtOUdEW2noD2YXtkyVINmMh6vgiFZfV0WS lane-asi1-airdrop",
   "rate": 30,
   "recipients": [
    "googlevps",
+   "lane-agnes",
    "lane-asi1-airdrop",
    "lane-asi1-gig",
    "lane-chat",
    "lane-coding",
+   "lane-m3-1",
    "lane-vision",
    "laptop",
    "rci-vps"
@@ -34,10 +55,12 @@
   "rate": 30,
   "recipients": [
    "googlevps",
+   "lane-agnes",
    "lane-asi1-airdrop",
    "lane-asi1-gig",
    "lane-chat",
    "lane-coding",
+   "lane-m3-1",
    "lane-vision",
    "laptop",
    "rci-vps"
@@ -49,10 +72,12 @@
   "rate": 30,
   "recipients": [
    "googlevps",
+   "lane-agnes",
    "lane-asi1-airdrop",
    "lane-asi1-gig",
    "lane-chat",
    "lane-coding",
+   "lane-m3-1",
    "lane-vision",
    "laptop",
    "rci-vps"
@@ -64,10 +89,29 @@
   "rate": 30,
   "recipients": [
    "googlevps",
+   "lane-agnes",
    "lane-asi1-airdrop",
    "lane-asi1-gig",
    "lane-chat",
    "lane-coding",
+   "lane-m3-1",
+   "lane-vision",
+   "laptop",
+   "rci-vps"
+  ],
+  "rows": 16
+ },
+ "lane-m3-1": {
+  "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPKcXxU1VN0aoGu2rLXJ5p2ElBcPtHiCvdawFz9WvTum lane-m3-1",
+  "rate": 30,
+  "recipients": [
+   "googlevps",
+   "lane-agnes",
+   "lane-asi1-airdrop",
+   "lane-asi1-gig",
+   "lane-chat",
+   "lane-coding",
+   "lane-m3-1",
    "lane-vision",
    "laptop",
    "rci-vps"
@@ -79,10 +123,12 @@
   "rate": 30,
   "recipients": [
    "googlevps",
+   "lane-agnes",
    "lane-asi1-airdrop",
    "lane-asi1-gig",
    "lane-chat",
    "lane-coding",
+   "lane-m3-1",
    "lane-vision",
    "laptop",
    "rci-vps"
@@ -94,10 +140,12 @@
   "rate": 10,
   "recipients": [
    "googlevps",
+   "lane-agnes",
    "lane-asi1-airdrop",
    "lane-asi1-gig",
    "lane-chat",
    "lane-coding",
+   "lane-m3-1",
    "lane-vision",
    "laptop",
    "rci-vps"
@@ -109,10 +157,12 @@
   "rate": 10,
   "recipients": [
    "googlevps",
+   "lane-agnes",
    "lane-asi1-airdrop",
    "lane-asi1-gig",
    "lane-chat",
    "lane-coding",
+   "lane-m3-1",
    "lane-vision",
    "laptop",
    "rci-vps"
