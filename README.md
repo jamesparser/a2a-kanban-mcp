@@ -1,8 +1,8 @@
 # a2a-kanban-mcp — signed + encrypted A2A kanban board (MCP)
 
 **Public edition.** The shared card key (`kanban_cek.json`) is NOT in this repo —
-generate it per fleet with `gen_kanban_cek.py` (or `gen_enc_keys.py`) and keep it
-mode 0600 on every client. The private edition with the live CEK and one fleet's
+generate it per fleet with `gen_kanban_cek.py` on the board host and keep it mode
+0600 on every client. The private edition with the live CEK and one fleet's
 live roster is held in the Node0 org.
 
 Durable, signed, encrypted task state for an agent fleet: an MCP stdio server
@@ -157,9 +157,10 @@ created and the board looks dead even though every lane can read it.
 sudo mkdir -p /opt/mesh-board-prod-20261031 /var/lib/mesh-kanban /opt/kanban-mcp
 sudo cp kanban_board.py roster.json /opt/mesh-board-prod-20261031/
 sudo cp kanban_mcp_server.py kanban_enc.py /opt/kanban-mcp/
-# generate the shared CEK once per fleet, then install it here and on every client
-python3 gen_kanban_cek.py > kanban_cek.json   # or pass --out
-sudo cp kanban_cek.json /opt/kanban-mcp/
+# generate the shared CEK ONCE per fleet (writes /opt/kanban-mcp/kanban_cek.json, 0600)
+sudo python3 /opt/kanban-mcp/gen_kanban_cek.py
+# then copy that same file to every client (0600). --force regenerates = every
+# existing card body becomes unreadable.
 sudo chmod 600 /opt/kanban-mcp/kanban_cek.json
 sudo cp kanban-board.service omega-kanban-relay.service /etc/systemd/system/
 sudo systemctl daemon-reload
