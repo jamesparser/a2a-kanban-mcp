@@ -1,0 +1,8 @@
+# These files run on Linux (board host, relay, MCP stdio under a Linux venv)
+# and are edited on Windows. Pin LF so a Windows checkout does not rewrite
+# every line and so `md5sum` comparisons against the board host stay meaningful.
+* text=auto eol=lf
+*.py text eol=lf
+*.service text eol=lf
+*.md text eol=lf
+*.json text eol=lf

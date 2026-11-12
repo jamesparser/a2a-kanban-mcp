@@ -1,0 +1,21 @@
+[Unit]
+Description=Omega kanban relay: container spool <-> a2a kanban board (signed, encrypted)
+After=network-online.target kanban-board.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/kanban-mcp
+Environment=KANBAN_PRINCIPAL=rci-vps
+Environment=KANBAN_KEY=/root/.ssh/id_ed25519
+Environment=KANBAN_ENC_KEYS=/opt/kanban-mcp/kanban_cek.json
+Environment=KANBAN_BOARD_HOST=127.0.0.1
+Environment=KANBAN_LOCAL=1
+Environment=KANBAN_CONTAINER_LANE=omega
+ExecStart=/usr/bin/python3 /opt/kanban-mcp/omega_kanban_relay.py
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target

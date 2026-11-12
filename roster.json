@@ -1,0 +1,122 @@
+{
+ "googlevps": {
+  "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKAaDfBrVwH9aYe2ODxOje7dChoDKptrjfAqiMKh/ojt",
+  "rate": 10,
+  "recipients": [
+   "googlevps",
+   "lane-asi1-airdrop",
+   "lane-asi1-gig",
+   "lane-chat",
+   "lane-coding",
+   "lane-vision",
+   "laptop",
+   "rci-vps"
+  ],
+  "rows": 8
+ },
+ "lane-asi1-airdrop": {
+  "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKZHQjx187RtOUdEW2noD2YXtkyVINmMh6vgiFZfV0WS lane-asi1-airdrop",
+  "rate": 30,
+  "recipients": [
+   "googlevps",
+   "lane-asi1-airdrop",
+   "lane-asi1-gig",
+   "lane-chat",
+   "lane-coding",
+   "lane-vision",
+   "laptop",
+   "rci-vps"
+  ],
+  "rows": 16
+ },
+ "lane-asi1-gig": {
+  "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAID9LRqRnr5kWkxL0wNb4JdbCRwcvOLAzw9f9tTOA9Hd+ lane-asi1-gig",
+  "rate": 30,
+  "recipients": [
+   "googlevps",
+   "lane-asi1-airdrop",
+   "lane-asi1-gig",
+   "lane-chat",
+   "lane-coding",
+   "lane-vision",
+   "laptop",
+   "rci-vps"
+  ],
+  "rows": 16
+ },
+ "lane-chat": {
+  "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBaHl1B6jFvhnA8ktySVV6EAvm19DBp2p5TSugJzREmq lane-chat",
+  "rate": 30,
+  "recipients": [
+   "googlevps",
+   "lane-asi1-airdrop",
+   "lane-asi1-gig",
+   "lane-chat",
+   "lane-coding",
+   "lane-vision",
+   "laptop",
+   "rci-vps"
+  ],
+  "rows": 16
+ },
+ "lane-coding": {
+  "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHWPI/wMYd9IXo07sf8tHjCs0jNY3y4LVbRr6uj1+a2s lane-coding",
+  "rate": 30,
+  "recipients": [
+   "googlevps",
+   "lane-asi1-airdrop",
+   "lane-asi1-gig",
+   "lane-chat",
+   "lane-coding",
+   "lane-vision",
+   "laptop",
+   "rci-vps"
+  ],
+  "rows": 16
+ },
+ "lane-vision": {
+  "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJwHl4pTWk06K3nmiRhYwWYbBirdH4eoBLT99HYtQ4C/ lane-vision",
+  "rate": 30,
+  "recipients": [
+   "googlevps",
+   "lane-asi1-airdrop",
+   "lane-asi1-gig",
+   "lane-chat",
+   "lane-coding",
+   "lane-vision",
+   "laptop",
+   "rci-vps"
+  ],
+  "rows": 16
+ },
+ "laptop": {
+  "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHNebuc+Xs/kbfRzCri+O5gV8M36IEBQ3r1o5RFMoQoz",
+  "rate": 10,
+  "recipients": [
+   "googlevps",
+   "lane-asi1-airdrop",
+   "lane-asi1-gig",
+   "lane-chat",
+   "lane-coding",
+   "lane-vision",
+   "laptop",
+   "rci-vps"
+  ],
+  "rows": 8
+ },
+ "rci-vps": {
+  "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEZ+Asv5+4KcQ3ZEqn5T/uncn9zrlWf91LG/DfTyHEHA",
+  "rate": 10,
+  "recipients": [
+   "googlevps",
+   "lane-asi1-airdrop",
+   "lane-asi1-gig",
+   "lane-chat",
+   "lane-coding",
+   "lane-vision",
+   "laptop",
+   "rci-vps"
+  ],
+  "rows": 16
+ }
+}

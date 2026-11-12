@@ -1,0 +1,20 @@
+[Unit]
+Description=Omega kanban board (durable per-agent task state, sibling of the mesh message board)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/opt/mesh-board-prod-20261031
+Environment=SIGNED_KANBAN_DB=/var/lib/mesh-kanban/kanban.db
+Environment=KANBAN_ROSTER=/opt/mesh-board-prod-20261031/roster.json
+ExecStart=/usr/bin/python3 /opt/mesh-board-prod-20261031/kanban_board.py --db /var/lib/mesh-kanban/kanban.db --roster /opt/mesh-board-prod-20261031/roster.json --init
+# Housekeeping: cards NEVER expire (that is the point). This timer only
+# truncates the receipt table so replay ids do not grow forever.
+ExecStart=/usr/bin/python3 /opt/mesh-board-prod-20261031/kanban_board.py --db /var/lib/mesh-kanban/kanban.db --roster /opt/mesh-board-prod-20261031/roster.json --prune
+TimeoutStartSec=60
+User=root
+
+[Install]
+WantedBy=multi-user.target
